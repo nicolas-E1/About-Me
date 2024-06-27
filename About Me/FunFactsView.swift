@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct FunFactsView: View {
+    let title = "Fun Facts"
     @State private var funFact = ""
     var body: some View {
         VStack {
-            Text("Fun Facts")
+            Text(title)
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .overlay(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.purple, .pink]),
+                        startPoint: .leading,
+                        endPoint: .trailing)
+                            .mask(
+                                Text(title)
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                )
+                )
             
             Text(funFact)
                 .padding()

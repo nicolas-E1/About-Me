@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    let title = "All About"
     var body: some View {
         VStack {
-            Text("All About")
+            Text(title)
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
+                .overlay(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.purple, .pink]),
+                        startPoint: .leading,
+                        endPoint: .trailing)
+                            .mask(
+                                Text(title)
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                            )
+                )
             
             Image(information.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: 300)
                 .clipShape(Circle())
                 .overlay{
                     Circle().stroke(Color.accentColor, lineWidth: 4)
@@ -27,6 +40,17 @@ struct HomeView: View {
             
             Text(information.name)
                 .font(.title)
+                .fontWeight(.bold)
+//                .overlay(
+//                    LinearGradient(
+//                        gradient: Gradient(colors: [.purple, .pink]),
+//                        startPoint: .leading,
+//                        endPoint: .trailing)
+//                            .mask(
+//                                Text(information.name)
+//                                    .font(.title)
+//                            )
+//                )
         }
     }
 }

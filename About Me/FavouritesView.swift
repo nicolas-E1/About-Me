@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct FavouritesView: View {
+    let title = "Favourites"
     var body: some View {
         VStack {
-            Text("Favourites")
+            Text(title)
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .overlay(
+                    LinearGradient(
+                        gradient: Gradient(colors: [.purple, .pink]),
+                        startPoint: .leading,
+                        endPoint: .trailing)
+                            .mask(
+                                Text(title)
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                )
+                )
                 .padding(.bottom, 40)
             
             Text("Hobbies")
@@ -25,6 +37,7 @@ struct FavouritesView: View {
                             Image(systemName: value)
                                 .resizable()
                                 .scaledToFit()
+                                .frame(maxWidth: 50)
                                 .foregroundColor(Color.accentColor)
                             
                             Text(key.capitalized)
