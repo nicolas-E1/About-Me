@@ -18,6 +18,7 @@
 		37E776C42C2CF9E80029C54E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E776C32C2CF9E80029C54E /* Data.swift */; };
 		37E776C82C2D0D070029C54E /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E776C72C2D0D070029C54E /* StoryView.swift */; };
 		37E776CA2C2D21F20029C54E /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E776C92C2D21F20029C54E /* FavouritesView.swift */; };
+		37E776CC2C2D35C60029C54E /* FunFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E776CB2C2D35C60029C54E /* FunFactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		37E776C32C2CF9E80029C54E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		37E776C72C2D0D070029C54E /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		37E776C92C2D21F20029C54E /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		37E776CB2C2D35C60029C54E /* FunFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				37E776962C2CF5240029C54E /* About_MeApp.swift */,
 				37E776982C2CF5240029C54E /* ContentView.swift */,
+				37E776CB2C2D35C60029C54E /* FunFactsView.swift */,
 				37E776C72C2D0D070029C54E /* StoryView.swift */,
 				37E776C92C2D21F20029C54E /* FavouritesView.swift */,
 				37E7769A2C2CF5250029C54E /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 				37E776C82C2D0D070029C54E /* StoryView.swift in Sources */,
 				37E776C22C2CF7FE0029C54E /* HomeView.swift in Sources */,
 				37E776992C2CF5240029C54E /* ContentView.swift in Sources */,
+				37E776CC2C2D35C60029C54E /* FunFactsView.swift in Sources */,
 				37E776C42C2CF9E80029C54E /* Data.swift in Sources */,
 				37E776CA2C2D21F20029C54E /* FavouritesView.swift in Sources */,
 				37E776972C2CF5240029C54E /* About_MeApp.swift in Sources */,

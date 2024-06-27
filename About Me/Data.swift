@@ -15,7 +15,7 @@ struct Info {
     let hobbies: [String: String]
     let foods: [String]
     let colours: [Color]
-    let funFactrs: [String]
+    let funFacts: [String]
 }
 
 let information = Info(
@@ -25,4 +25,4 @@ let information = Info(
     hobbies: ["Coding": "greaterthan.square", "Swimming": "figure.pool.swim", "Reading": "book.fill", "Music": "airpodsmax"],
     foods: ["🍕", "🍝", "🍦"],
     colours: [Color.blue, Color.green, Color.yellow],
-    funFactrs: ["🛟 In the summer, I trade my keyboard for a whistle and become a Lifesaver—because who needs code when you can save lives?", "🍫 I’m basically a human-sized candy jar. Sweets are my kryptonite.", "☕️ I can have an espresso before bed and still sleep like a baby. Caffeine fears me.", "🎵 I’m such a music lover that even my code has a soundtrack."])
+    funFacts: ["🛟\nIn the summer, I trade my keyboard for a whistle and become a Lifesaver—because who needs code when you can save lives?", "🍫\nI’m basically a human-sized candy jar. Sweets are my kryptonite.", "☕️\nI can have an espresso before bed and still sleep like a baby. Caffeine fears me.", "🎵\nI’m such a music lover that even my code has a soundtrack."])
