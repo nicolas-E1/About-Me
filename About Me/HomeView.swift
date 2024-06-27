@@ -16,10 +16,14 @@ struct HomeView: View {
                 .padding()
             
             Image(information.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                    .padding(40)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+                .overlay{
+                    Circle().stroke(Color.accentColor, lineWidth: 4)
+                }
+                .shadow(radius: 7)
+                .padding(40)
             
             Text(information.name)
                 .font(.title)
