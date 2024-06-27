@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "person")
                 }
+            StoryView()
+                .tabItem{
+                    Label("Story", systemImage: "book")
+                }
         }
     }
 }
